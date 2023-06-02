@@ -1,9 +1,10 @@
 // Require the necessary discord.js classes
 const { Client, Events, GatewayIntentBits } = require('discord.js');
-const { dctoken, attoken } = require('./config.json');
 const Airtable = require('airtable');
 
 // Create a new Airtable instance
+const attoken = process.env.ATTOKEN;
+const dctoken = process.env.DCTOKEN;
 const base = new Airtable(
     {
         apiKey: attoken,
