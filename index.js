@@ -4,7 +4,7 @@ const Airtable = require('airtable');
 
 // Create a new Airtable instance
 const attoken = process.env.ATTOKEN;
-const dctoken = process.env.DCTOKEN;
+const dctoken = process.env.TOKEN;
 const base = new Airtable(
     {
         apiKey: attoken,
